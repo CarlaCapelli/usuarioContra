@@ -1,16 +1,14 @@
-let usuario: string = document.getElementById("usuario");
-let pass: string = document.getElementById("pass");
-const usu: string = "juan";
-const pasw: string = "clavejuan";
+let dato1: string = document.getElementById("dato1");
+let dato2: string = document.getElementById("dato2");
 let btn = document.getElementById("btn");
-
-btn?.addEventListener("click ", () => {
-  let usuingresado: number = Number(usuario.value);
-  let passingresado: number = Number(pass.value);
-
-  if (usuingresado === usu && passingresado === pasw) {
-    console.log("ingreso exitoso");
+const usIngresado: string = "juan";
+const contIngresado: string = "clavejuan";
+btn.addEventListener("click", () => {
+  let usuar: string = dato1.value;
+  let contr: string = dato2.value;
+  if (usuar === usIngresado && contr === contIngresado) {
+    console.log("bienvenido");
   } else {
-    console.log("ingreso denegado");
+    console.log("el usuario o la contraseña son incorrectos");
   }
 });
